@@ -195,10 +195,10 @@
 
 .close {
   position:absolute;
-  right: 0px;
+  left: 0px;
   top: 0px;
-  width: 90px;
-  height: 90px;
+  width: 1024px;
+  height: 768px;
   display: none;
   z-index: 20;
   cursor: pointer;
