@@ -1,0 +1,398 @@
+
+* {
+	margin:0px;
+	padding:0px;
+}
+
+.slide2bg {
+    position:absolute;
+	background: url("Ceretor2-assets/s2_bg.png");
+	height:768px;
+	width:1024px;
+	background-position:center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.s2_1 {
+    position:absolute;
+  left: 166px;
+  top: 64px;
+  width: 792px;
+  height: 222px;
+	background-position:center;
+	background-repeat: no-repeat;
+	animation-name: fadeInUp;
+	-webkit-animation-name: fadeInUp;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	opacity: 0;
+	z-index:1;
+}
+
+.s2_2 {
+	position: absolute;
+    overflow: hidden;
+  left: 457px;
+  top: 319px;
+  width: 509px;
+  height: 154px;
+	background-position:center;
+	background-repeat: no-repeat;
+	animation-name: rotateInDownLeft;
+	-webkit-animation-name: rotateInDownLeft;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+	opacity: 0;
+	z-index:2;
+}
+
+.s2_3 {
+    position:absolute;
+  left: 374px;
+  top: 477px;
+  width: 509px;
+  height: 154px;
+	background-position:center;
+	background-repeat: no-repeat;
+	animation-name: rotateInDownLeft;
+	-webkit-animation-name: rotateInDownLeft;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+	opacity: 0;
+	z-index:3;
+}
+
+.s2_4 {
+    position:absolute;
+  left: 297px;
+  top: 687px;
+  width: 447px;
+  height: 31px;
+	background-position:center;
+	background-repeat: no-repeat;
+	animation-name: fadeInLeft;
+	-webkit-animation-name: fadeInLeft;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-delay: 3.5s;
+	-webkit-animation-delay: 3.5s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	opacity: 0;
+	z-index:4;
+}
+
+.s2_5 {
+    position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 1024px;
+  height: 769px;
+	background-position:center;
+	background-repeat: no-repeat;
+	animation-name: slideInDown;
+	-webkit-animation-name: slideInDown;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	opacity: 0;
+	display: none;
+	z-index:15;
+}
+
+.pop1 {
+  position:absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 70px;
+  height: 100px;
+  z-index: 10;
+}
+
+.close {
+  position:absolute;
+  right: 0px;
+  top: 0px;
+  width: 1024px;
+  height: 768px;
+  display: none;
+  z-index: 20;
+}
+
+.prev {
+  position: absolute;
+  left: 30px;
+  top: 365px;
+  width: 66px;
+  height: 66px;
+  z-index: 50;
+}
+
+
+@-webkit-keyframes growBig {
+  from {
+    -webkit-transform: scale3d(0.80, 0.80, 0.80);
+    transform: scale3d(0.80, 0.80, 0.80);
+	opacity: 0.7;
+  }
+
+  to {
+    -webkit-transform: scale3d(1.07, 1.07, 1.07);
+    transform: scale3d(1.07, 1.07, 1.07);
+	opacity: 1;
+  }
+}
+
+@keyframes growBig {
+ from {
+    -webkit-transform: scale3d(0.80, 0.80, 0.80);
+    transform: scale3d(0.80, 0.80, 0.80);
+	opacity: 0.7;
+  }
+
+  to {
+    -webkit-transform: scale3d(1.07, 1.07, 1.07);
+    transform: scale3d(1.07, 1.07, 1.07);
+	opacity: 1;
+  }
+}
+
+.growBig {
+  -webkit-animation-name: growBig;
+  animation-name: growBig;
+}
+ 
+  
+@-webkit-keyframes pulseBig {
+  from {
+    -webkit-transform: scale3d(0.80, 0.80, 0.80);
+    transform: scale3d(0.80, 0.80, 0.80);
+	opacity: 0.7;
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.07, 1.07, 1.07);
+    transform: scale3d(1.07, 1.07, 1.07);
+	opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale3d(0.80, 0.80, 0.80);
+    transform: scale3d(0.80, 0.80, 0.80);
+	opacity: 0.7;
+  }
+}
+
+@keyframes pulseBig {
+ from {
+    -webkit-transform: scale3d(0.80, 0.80, 0.80);
+    transform: scale3d(0.80, 0.80, 0.80);
+	opacity: 0.7;
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.07, 1.07, 1.07);
+    transform: scale3d(1.07, 1.07, 1.07);
+	opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale3d(0.80, 0.80, 0.80);
+    transform: scale3d(0.80, 0.80, 0.80);
+	opacity: 0.7;
+  }
+}
+
+.pulseBig {
+  -webkit-animation-name: pulseBig;
+  animation-name: pulseBig;
+}
+
+@-webkit-keyframes scaleBig{
+  0% {
+    transform:scale(0); opacity:0;
+  }
+  
+  100% {
+    transform:scale(1);opacity:1;
+  }
+}
+@keyframes scaleBig {
+  0% {
+    transform:scale(0); opacity:0;
+  }
+  
+  100% {
+    transform:scale(1);opacity:1;
+  }
+}
+
+.scaleBig {
+  -webkit-animation-name: scaleBig;
+  animation-name: scaleBig;
+}
+
+@-webkit-keyframes revealHorizontal{
+  0% {
+    clip: rect(0px,0px,100px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,1000px,100px,0px);
+	opacity: 1;
+  }
+}
+@keyframes revealHorizontal {
+  0% {
+    clip: rect(0px,0px,300px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,1000px,300px,0px);
+	opacity: 1;
+  }
+}
+
+.revealHorizontal {
+  -webkit-animation-name: revealHorizontal;
+  animation-name: revealHorizontal;
+}
+
+@-webkit-keyframes revealHorizontalSmall{
+  0% {
+    clip: rect(0px,0px,50px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,400px,50px,0px);
+	opacity: 1;
+  }
+}
+@keyframes revealHorizontalSmall {
+  0% {
+    clip: rect(0px,0px,50px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,400px,50px,0px);
+	opacity: 1;
+  }
+}
+
+.revealHorizontalSmall {
+  -webkit-animation-name: revealHorizontalSmall;
+  animation-name: revealHorizontalSmall;
+}
+
+@-webkit-keyframes revealHorizontalRev{
+  0% {
+    clip: rect(0px,600px,133px,600px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,600px,133px,0px);
+	opacity: 1;
+  }
+}
+@keyframes revealHorizontalRev {
+  0% {
+    clip: rect(0px,600px,133px,600px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,600px,133px,0px);
+	opacity: 1;
+  }
+}
+
+.revealHorizontalRev {
+  -webkit-animation-name: revealHorizontalRev;
+  animation-name: revealHorizontalRev;
+}
+
+@-webkit-keyframes revealVertical{
+  0% {
+    clip: rect(0px,600px,0px,0px);
+	opacity: 0;
+  }
+  
+  100% {
+    clip: rect(0px,600px,1024px,0px);
+	opacity: 1;
+  }
+}
+@keyframes revealVertical {
+  0% {
+    clip: rect(1024px,600px,1024px,0px);
+	opacity: 0;
+  }
+  
+  100% {
+    clip: rect(0px,600px,1024px,0px);
+	opacity: 1;
+  }
+}
+
+.revealVertical {
+  -webkit-animation-name: revealVertical;
+  animation-name: revealVertical;
+}
+
+@-webkit-keyframes p1stamp1{
+ 0%{
+   opacity:.50;
+   transform-origin: 50% 50%;
+   transform: rotate(-2deg) scale(3);
+   transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+ }
+ 100%{
+   opacity:1;
+   transform: rotate(0deg) scale(1);
+ }
+}
+
+@keyframes p1stamp1{
+ 0%{
+   opacity:.50;
+   transform-origin: 50% 50%;
+   transform: rotate(-2deg) scale(3);
+   transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+ }
+ 100%{
+   opacity:1;
+   transform: rotate(0deg) scale(1);
+ }
+}

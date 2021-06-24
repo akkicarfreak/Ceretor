@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta http-equiv="cache-control" content="max-age=200"/>
+	<meta name="viewport" content="min-scale=1, Trimester1-scale=1"/>
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ceretor-2</title>
+
+    <!-- Links -->
+	<link rel="stylesheet" type="text/css" href="animate.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="style2.css" media="screen"/>  <!-- Important -->
+	
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" language="javascript"></script> <!-- Important -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+</head>
+
+<body>
+		<div class="slide2bg">
+		<div class="pop1" onclick="pop1()"></div>
+		<div class="close" onclick="close()"></div>
+		<a href="index.html" class="prev"><img src="Ceretor1-assets/prev.png"></a>
+		<div class="s2_1"><img src="Ceretor2-assets/s2_1.png"></div>
+		<div class="s2_2"><img src="Ceretor2-assets/s2_2.png"></div>
+		<div class="s2_3"><img src="Ceretor2-assets/s2_3.png"></div>
+		<div class="s2_4"><img src="Ceretor2-assets/s2_4.png"></div>
+		<div class="s2_5"><img src="Ceretor2-assets/s2_5.png"></div>
+		</div>
+		
+		<script>
+		$(".pop1").click(function(){
+			$(".s2_5").css("display","block");
+			$(".close").css("display","block");
+			$(".pop1").css("display","none");
+		});
+		$(".close").click(function(){
+			$(".s2_5").css("display","none");
+			$(".close").css("display","none");
+			$(".pop1").css("display","block");
+		});
+		</script>
+</body>
+</html>

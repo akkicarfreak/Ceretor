@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta http-equiv="cache-control" content="max-age=200"/>
+	<meta name="viewport" content="initial-scale=1, Trimester1-scale=1"/>
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ceretor-1</title>
+
+    <!-- Links -->
+	<link rel="stylesheet" type="text/css" href="animate.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="style1.css" media="screen"/>  <!-- Important -->
+	
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" language="javascript"></script> <!-- Important -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+</head>
+
+<body>
+		<div class="slide1bg">
+		<div class="pop1" onclick="pop1()"></div>
+		<div class="pop2" onclick="pop2()"></div>
+		<div class="close" onclick="close()"></div>
+		<a href="slide2.html" class="next"><img src="Ceretor1-assets/next.png"></a>
+		<div class="s1_1"><img src="Ceretor1-assets/s1_1.png"></div>
+		<div class="s1_2"><img src="Ceretor1-assets/s1_2.png"></div>
+		<div class="s1_3"><img src="Ceretor1-assets/s1_3.png"></div>
+		<div class="s1_4"><img src="Ceretor1-assets/s1_4.png"></div>
+		<div class="s1_5"><img src="Ceretor1-assets/s1_5.png"></div>
+		<div class="s1_6"><img src="Ceretor1-assets/s1_6.png"></div>
+		<div class="s1_7"><img src="Ceretor1-assets/s1_7.png"></div>
+		</div>
+		
+		<script>
+		$(".pop1").click(function(){
+			$(".s1_6").css("display","block");
+			$(".close").css("display","block");
+			$(".pop1").css("display","none");
+		});
+		$(".pop2").click(function(){
+			$(".s1_7").css("display","block");
+			$(".close").css("display","block");
+			$(".pop2").css("display","none");
+		});
+		$(".close").click(function(){
+			$(".s1_6,.s1_7").css("display","none");
+			$(".close").css("display","none");
+			$(".pop1,.pop2").css("display","block");
+		});
+		</script>
+</body>
+</html>
