@@ -180,6 +180,7 @@
   width: 60px;
   height: 100px;
   z-index: 10;
+  cursor: pointer;
 }
 
 .slide1bg .pop2 {
@@ -188,8 +189,8 @@
   bottom: 0px;
   width: 60px;
   height: 100px;
-  border: 2px solid red;
   z-index: 10;
+  cursor: pointer;
 }
 
 .close {
@@ -200,6 +201,7 @@
   height: 90px;
   display: none;
   z-index: 20;
+  cursor: pointer;
 }
 
 .next {
@@ -209,6 +211,7 @@
   width: 66px;
   height: 66px;
   z-index: 50;
+  cursor: pointer;
 }
 
 
